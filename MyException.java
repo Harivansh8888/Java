@@ -11,5 +11,9 @@ public class MyException
 		{
 			System.out.println("Something went Wrong !");
 		}
+		finally
+		{
+      			System.out.println("The 'try catch' is finished.");
+                } 
 	}
 } 
