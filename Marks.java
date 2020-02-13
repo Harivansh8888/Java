@@ -24,5 +24,25 @@ public class Marks
 				}
 			}
 		}
+		System.out.println("RESULT :");
+		for(i=0;i<10;i++)
+		{
+			if(marks[i] >= 40 && marks[i] <= 50)
+			{
+				System.out.println(marks[i]+": PASS");
+			}
+			else if (marks[i] >= 51 && marks[i] <= 75)
+			{
+				System.out.println(marks[i]+": MERIT");
+			}
+			else if (marks[i] >=76)
+			{
+				System.out.println(marks[i]+": DISTINCTION");
+			}
+			else
+			{
+				System.out.println(marks[i]);
+			}
+		}
 	}
 }
