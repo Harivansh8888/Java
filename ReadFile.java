@@ -9,18 +9,18 @@ public class ReadFile
 		try
 		{
 			File myObj = new File("filename.txt");
-			Scanner myReader = new Scanner(myObj);
-			while( myReader.hasNextLine())
+			Scanner myReader = new Scanner(myObj); //myReader is an object of Scanner Class which will read data from file
+			while( myReader.hasNextLine()) //condition for reading data till the cursor reaches the end of file
 			{
 				String data = myReader.nextLine();
-				System.out.println(data);
+				System.out.println(data); 
 			}
-		myReader.close();
+		myReader.close(); //closing the file from which data was read
 		}
 		catch (FileNotFoundException e)
 		{
 		 	System.out.println("An error occured");
-			e.printStackTrace();
+			e.printStackTrace(); // displays where error occured in the program
 		}
 	}
 }
