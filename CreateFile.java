@@ -7,7 +7,7 @@ public class CreateFile
 	{
     		try
 		{
-      			File myObj = new File("filename.txt");
+      			File myObj = new File("filename.txt"); // File is a standard class in Java, making an object File class
       			if (myObj.createNewFile())
 			{
         				System.out.println("File created: " + myObj.getName());
@@ -20,7 +20,7 @@ public class CreateFile
 		catch (IOException e)
 		{
       			System.out.println("An error occurred.");
-      			e.printStackTrace();
+      			e.printStackTrace(); // displays in which line error has occured
     		}
   	}
 }
