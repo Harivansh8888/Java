@@ -97,4 +97,15 @@ class Threading2 extends Thread
     }
    }
 }
+public class OnlineThreadingAssignment
+{
+	public static void main(String args[])
+	{
+		Threading1 obj1 = new Threading1();
+		obj1.start();
+		
+		Threading2 obj2 = new Threading2();
+		obj2.start();
+	}
+}
 
